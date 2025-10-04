@@ -1,0 +1,134 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Theme Configuration",
+  "description": "Design system tokens for the SaaS MVP template",
+  "type": "object",
+  "required": ["brand", "typography", "spacing", "radius", "shadow"],
+  "properties": {
+    "brand": {
+      "type": "object",
+      "required": ["primary", "secondary", "accent"],
+      "properties": {
+        "primary": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Primary brand color (hex)"
+        },
+        "secondary": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Secondary brand color (hex)"
+        },
+        "accent": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$",
+          "description": "Accent color (hex)"
+        },
+        "success": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "warning": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "error": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        },
+        "info": {
+          "type": "string",
+          "pattern": "^#[0-9A-Fa-f]{6}$"
+        }
+      }
+    },
+    "typography": {
+      "type": "object",
+      "required": ["fontFamily", "scale"],
+      "properties": {
+        "fontFamily": {
+          "type": "object",
+          "required": ["base", "heading"],
+          "properties": {
+            "base": {
+              "type": "string",
+              "description": "Base font family"
+            },
+            "heading": {
+              "type": "string",
+              "description": "Heading font family"
+            },
+            "mono": {
+              "type": "string",
+              "description": "Monospace font family"
+            }
+          }
+        },
+        "scale": {
+          "type": "object",
+          "description": "Type scale in rem units",
+          "patternProperties": {
+            "^(xs|sm|base|lg|xl|2xl|3xl|4xl|5xl)$": {
+              "type": "string",
+              "pattern": "^[0-9]+(\\.[0-9]+)?rem$"
+            }
+          }
+        }
+      }
+    },
+    "spacing": {
+      "type": "object",
+      "description": "Spacing scale in rem units",
+      "patternProperties": {
+        "^[0-9]+$": {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]+)?rem$"
+        }
+      }
+    },
+    "radius": {
+      "type": "object",
+      "required": ["sm", "base", "lg"],
+      "properties": {
+        "sm": {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]+)?(px|rem)$"
+        },
+        "base": {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]+)?(px|rem)$"
+        },
+        "lg": {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]+)?(px|rem)$"
+        },
+        "full": {
+          "type": "string",
+          "pattern": "^[0-9]+(\\.[0-9]+)?(px|rem|%)$"
+        }
+      }
+    },
+    "shadow": {
+      "type": "object",
+      "required": ["sm", "base", "lg"],
+      "properties": {
+        "sm": {
+          "type": "string",
+          "description": "Small shadow"
+        },
+        "base": {
+          "type": "string",
+          "description": "Base shadow"
+        },
+        "lg": {
+          "type": "string",
+          "description": "Large shadow"
+        },
+        "xl": {
+          "type": "string",
+          "description": "Extra large shadow"
+        }
+      }
+    }
+  }
+}

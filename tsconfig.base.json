@@ -1,0 +1,34 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "ES2022",
+    "lib": ["ES2022", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "@saas-mvp/core/config": ["libs/core/config/src/index.ts"],
+      "@saas-mvp/core/auth": ["libs/core/auth/src/index.ts"],
+      "@saas-mvp/core/http": ["libs/core/http/src/index.ts"],
+      "@saas-mvp/ui/tokens": ["libs/ui/tokens/src/index.ts"],
+      "@saas-mvp/ui/primitives": ["libs/ui/primitives/src/index.ts"],
+      "@saas-mvp/features/pricing": ["libs/features/pricing/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

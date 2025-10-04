@@ -1,0 +1,13 @@
+{
+  "$schema": "./feature-flags.schema.json",
+  "flags": {
+    "exampleFeature": {
+      "enabled": false,
+      "description": "Example feature flag - remove when adding real features"
+    },
+    "darkMode": {
+      "enabled": false,
+      "description": "Enable dark mode theme support"
+    }
+  }
+}
