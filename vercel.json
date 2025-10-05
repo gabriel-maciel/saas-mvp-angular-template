@@ -1,15 +1,14 @@
 {
   "version": 2,
-  "name": "saas-mvp-angular-template",
   "buildCommand": "npm run build",
   "outputDirectory": "dist/demo/browser",
   "framework": null,
   "installCommand": "npm ci",
   "devCommand": "npm run dev",
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
