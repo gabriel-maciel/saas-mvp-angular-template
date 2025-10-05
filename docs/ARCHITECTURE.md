@@ -102,6 +102,7 @@ Components (use Tailwind classes)
 ### Example
 
 **theme.json**:
+
 ```json
 {
   "brand": {
@@ -111,6 +112,7 @@ Components (use Tailwind classes)
 ```
 
 **Generated CSS**:
+
 ```css
 :root {
   --color-primary: #3b82f6;
@@ -118,13 +120,15 @@ Components (use Tailwind classes)
 ```
 
 **Tailwind Config**:
+
 ```js
 colors: {
-  primary: 'var(--color-primary)'
+  primary: 'var(--color-primary)';
 }
 ```
 
 **Component**:
+
 ```html
 <button class="bg-primary">Click</button>
 ```
@@ -141,6 +145,7 @@ colors: {
 ### Usage
 
 **Configuration** (`config/feature-flags.json`):
+
 ```json
 {
   "flags": {
@@ -154,13 +159,13 @@ colors: {
 ```
 
 **In Templates**:
+
 ```html
-<div *featureFlag="'newDashboard'">
-  New dashboard content
-</div>
+<div *featureFlag="'newDashboard'">New dashboard content</div>
 ```
 
 **In Code**:
+
 ```typescript
 if (this.featureFlags.isEnabled('newDashboard')) {
   // Feature logic
@@ -301,12 +306,12 @@ npm run ci
 
 ### Threat Model
 
-| Threat | Mitigation |
-|--------|------------|
-| XSS | Angular's automatic sanitization |
-| CSRF | HTTP-only cookies, CSRF tokens |
-| Injection | Parameterized queries, input validation |
-| Auth bypass | Route guards, server-side validation |
+| Threat      | Mitigation                              |
+| ----------- | --------------------------------------- |
+| XSS         | Angular's automatic sanitization        |
+| CSRF        | HTTP-only cookies, CSRF tokens          |
+| Injection   | Parameterized queries, input validation |
+| Auth bypass | Route guards, server-side validation    |
 
 ## Monitoring
 
@@ -322,6 +327,30 @@ npm run ci
 - **Lighthouse CI**: Performance budgets in CI
 - **Bundle Analyzer**: Visualize bundle composition
 - **Source Maps**: Debug production issues
+
+## Tech Debt
+
+### Known Issues
+
+| Issue                      | Impact | Priority | Notes                                                                    |
+| -------------------------- | ------ | -------- | ------------------------------------------------------------------------ |
+| Karma v6 deprecated deps   | Low    | P3       | `glob@7`, `rimraf@3`, `inflight@1` from Karma. Monitor Karma v7+ support |
+| No E2E tests               | Medium | P2       | Add Playwright for critical user flows                                   |
+| No visual regression tests | Low    | P3       | Consider Percy or Chromatic                                              |
+
+### Deprecation Warnings
+
+Current npm install shows warnings from transitive dependencies:
+
+```
+npm warn deprecated inflight@1.0.6
+npm warn deprecated rimraf@3.0.2
+npm warn deprecated glob@7.2.3
+```
+
+**Source**: Karma v6.4.4 (latest v6 release)  
+**Action**: Monitor for Karma v7+ with Angular 20+ support  
+**Risk**: Low - no security vulnerabilities, functional impact minimal
 
 ## Future Enhancements
 

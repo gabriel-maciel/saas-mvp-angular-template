@@ -54,6 +54,7 @@ touch libs/ui/primitives/src/lib/card/card.component.ts
 ```
 
 **card.component.ts**:
+
 ```typescript
 import { Component } from '@angular/core';
 
@@ -70,11 +71,13 @@ export class CardComponent {}
 ```
 
 Export it in `libs/ui/primitives/src/index.ts`:
+
 ```typescript
 export * from './lib/card/card.component';
 ```
 
 Use it in your app:
+
 ```typescript
 import { CardComponent } from '@saas-mvp/ui/primitives';
 
@@ -100,15 +103,15 @@ Edit `config/feature-flags.json`:
 ```
 
 Use in template:
+
 ```html
-<div *featureFlag="'myFeature'">
-  This shows when the flag is enabled
-</div>
+<div *featureFlag="'myFeature'">This shows when the flag is enabled</div>
 ```
 
 ### 4. Create a New Page
 
 **apps/demo/src/app/pages/about/about.component.ts**:
+
 ```typescript
 import { Component } from '@angular/core';
 
@@ -126,6 +129,7 @@ export class AboutComponent {}
 ```
 
 Add route in `apps/demo/src/app/app.routes.ts`:
+
 ```typescript
 {
   path: 'about',
@@ -201,11 +205,13 @@ scripts/           # Build scripts
 ### Creating a Feature
 
 1. **Create a branch**:
+
    ```bash
    git checkout -b feat/add-user-profile
    ```
 
 2. **Add feature flag** (if incomplete):
+
    ```json
    {
      "flags": {
@@ -223,11 +229,13 @@ scripts/           # Build scripts
    - Use feature flag in routes/components
 
 4. **Test locally**:
+
    ```bash
    npm run ci
    ```
 
 5. **Commit and push**:
+
    ```bash
    git add .
    git commit -m "feat: add user profile page"
@@ -314,12 +322,12 @@ npm run test
 
 ## Useful Commands Reference
 
-| Command | Description |
-|---------|-------------|
-| `npm run dev` | Start dev server |
-| `npm run build` | Production build |
-| `npm run test` | Run tests |
-| `npm run lint` | Lint code |
-| `npm run format` | Format code |
+| Command               | Description                  |
+| --------------------- | ---------------------------- |
+| `npm run dev`         | Start dev server             |
+| `npm run build`       | Production build             |
+| `npm run test`        | Run tests                    |
+| `npm run lint`        | Lint code                    |
+| `npm run format`      | Format code                  |
 | `npm run theme:build` | Generate CSS from theme.json |
-| `npm run ci` | Run full CI pipeline |
+| `npm run ci`          | Run full CI pipeline         |
