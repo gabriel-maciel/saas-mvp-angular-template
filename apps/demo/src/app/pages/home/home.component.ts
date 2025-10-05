@@ -8,9 +8,7 @@ import { ButtonComponent } from '@saas-mvp/ui/primitives';
   template: `
     <div class="space-y-8">
       <section class="text-center">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">
-          Welcome to Your SaaS MVP
-        </h2>
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">Welcome to Your SaaS MVP</h2>
         <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
           A production-ready Angular 20 + Tailwind template following Trunk-Based Development
           principles.
@@ -31,9 +29,7 @@ import { ButtonComponent } from '@saas-mvp/ui/primitives';
         </div>
         <div class="bg-white p-6 rounded-lg shadow">
           <h3 class="text-lg font-semibold mb-2">Feature Flags</h3>
-          <p class="text-gray-600 mb-4">
-            Ship incomplete features safely behind runtime toggles.
-          </p>
+          <p class="text-gray-600 mb-4">Ship incomplete features safely behind runtime toggles.</p>
           <ui-button variant="ghost" size="sm">Explore →</ui-button>
         </div>
         <div class="bg-white p-6 rounded-lg shadow">

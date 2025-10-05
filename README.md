@@ -72,9 +72,7 @@ The theme system is token-based and flows from `config/theme.json` to CSS variab
 3. Use Tailwind utilities that reference the tokens:
 
 ```html
-<button class="bg-primary text-white rounded-lg shadow-lg px-4 py-2">
-  Click me
-</button>
+<button class="bg-primary text-white rounded-lg shadow-lg px-4 py-2">Click me</button>
 ```
 
 ### Available Token Categories
@@ -107,9 +105,7 @@ Feature flags allow you to ship incomplete features safely behind runtime toggle
 2. Use in templates with the directive:
 
 ```html
-<div *featureFlag="'myNewFeature'">
-  This content only shows when the flag is enabled
-</div>
+<div *featureFlag="'myNewFeature'">This content only shows when the flag is enabled</div>
 ```
 
 3. Or check programmatically:
@@ -173,18 +169,45 @@ Defined in `angular.json`:
 
 ## Scripts Reference
 
-| Script | Description |
-|--------|-------------|
-| `npm run dev` | Start development server |
-| `npm run build` | Production build |
-| `npm run test` | Run unit tests |
-| `npm run lint` | Lint all files |
-| `npm run format` | Format all files with Prettier |
-| `npm run format:check` | Check formatting without changes |
-| `npm run typecheck` | Run TypeScript compiler checks |
-| `npm run theme:build` | Generate CSS variables from theme.json |
-| `npm run theme:watch` | Watch theme.json and rebuild on changes |
-| `npm run ci` | Run full CI pipeline locally |
+| Script                 | Description                             |
+| ---------------------- | --------------------------------------- |
+| `npm run dev`          | Start development server                |
+| `npm run build`        | Production build                        |
+| `npm run test`         | Run unit tests                          |
+| `npm run lint`         | Lint all files                          |
+| `npm run format`       | Format all files with Prettier          |
+| `npm run format:check` | Check formatting without changes        |
+| `npm run typecheck`    | Run TypeScript compiler checks          |
+| `npm run theme:build`  | Generate CSS variables from theme.json  |
+| `npm run theme:watch`  | Watch theme.json and rebuild on changes |
+| `npm run demo`         | Alias for dev (preview/demo mode)       |
+| `npm run story`        | Alias for dev (Storybook-like preview)  |
+| `npm run release:tag`  | Create release tag and trigger deploy   |
+| `npm run release:deploy` | Deploy specific version (rollback)    |
+| `npm run ci`           | Run full CI pipeline locally            |
+
+## Release & Deployment
+
+This project follows Trunk-Based Development with automated releases:
+
+```bash
+# Create a release (patch/minor/major)
+npm run release:tag          # Creates v0.1.1 (patch)
+npm run release:tag minor    # Creates v0.2.0 (minor)
+npm run release:tag major    # Creates v1.0.0 (major)
+
+# Rollback to previous version
+npm run release:deploy -- v0.1.0
+```
+
+**What happens on release:**
+1. Version bumped in `package.json`
+2. Git tag created (`vX.Y.Z`)
+3. Tag pushed to GitHub
+4. GitHub Actions deploys to staging → production
+5. GitHub Release created with changelog
+
+See [docs/RELEASE.md](./docs/RELEASE.md) for detailed release workflow.
 
 ## Architecture Principles
 
@@ -194,6 +217,12 @@ Defined in `angular.json`:
 - **Feature Flags**: Ship safely with dark launches
 - **Accessibility**: WCAG AA target; semantic HTML; keyboard navigation
 - **Performance**: LCP < 2.5s, CLS < 0.1; budgets enforced
+
+## Documentation
+
+- [Quick Start Guide](./docs/QUICK_START.md)
+- [Architecture Overview](./docs/ARCHITECTURE.md)
+- [Release & Deployment](./docs/RELEASE.md)
 
 ## Contributing
 

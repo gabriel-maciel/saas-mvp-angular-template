@@ -102,6 +102,7 @@ Components (use Tailwind classes)
 ### Example
 
 **theme.json**:
+
 ```json
 {
   "brand": {
@@ -111,6 +112,7 @@ Components (use Tailwind classes)
 ```
 
 **Generated CSS**:
+
 ```css
 :root {
   --color-primary: #3b82f6;
@@ -118,13 +120,15 @@ Components (use Tailwind classes)
 ```
 
 **Tailwind Config**:
+
 ```js
 colors: {
-  primary: 'var(--color-primary)'
+  primary: 'var(--color-primary)';
 }
 ```
 
 **Component**:
+
 ```html
 <button class="bg-primary">Click</button>
 ```
@@ -141,6 +145,7 @@ colors: {
 ### Usage
 
 **Configuration** (`config/feature-flags.json`):
+
 ```json
 {
   "flags": {
@@ -154,13 +159,13 @@ colors: {
 ```
 
 **In Templates**:
+
 ```html
-<div *featureFlag="'newDashboard'">
-  New dashboard content
-</div>
+<div *featureFlag="'newDashboard'">New dashboard content</div>
 ```
 
 **In Code**:
+
 ```typescript
 if (this.featureFlags.isEnabled('newDashboard')) {
   // Feature logic
@@ -301,12 +306,12 @@ npm run ci
 
 ### Threat Model
 
-| Threat | Mitigation |
-|--------|------------|
-| XSS | Angular's automatic sanitization |
-| CSRF | HTTP-only cookies, CSRF tokens |
-| Injection | Parameterized queries, input validation |
-| Auth bypass | Route guards, server-side validation |
+| Threat      | Mitigation                              |
+| ----------- | --------------------------------------- |
+| XSS         | Angular's automatic sanitization        |
+| CSRF        | HTTP-only cookies, CSRF tokens          |
+| Injection   | Parameterized queries, input validation |
+| Auth bypass | Route guards, server-side validation    |
 
 ## Monitoring
 

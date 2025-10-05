@@ -13,6 +13,11 @@
     "typecheck": "tsc --noEmit",
     "theme:build": "node scripts/build-theme.js",
     "theme:watch": "nodemon --watch config/theme.json --exec npm run theme:build",
+    "demo": "npm run dev",
+    "story": "npm run dev",
+    "a11y:smoke": "echo 'TODO: Add accessibility smoke tests (e.g., axe-core, pa11y)'",
+    "release:tag": "bash scripts/release-tag.sh",
+    "release:deploy": "bash scripts/release-deploy.sh",
     "ci": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run build"
   },
   "dependencies": {
