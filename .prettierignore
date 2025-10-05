@@ -1,0 +1,15 @@
+# Dependencies
+node_modules
+package-lock.json
+
+# Build outputs
+dist
+.angular
+coverage
+
+# Generated files
+apps/demo/src/theme.vars.css
+
+# IDE
+.vscode
+.idea
