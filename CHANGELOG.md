@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 ### Added
+
 - Initial Angular 20 + Tailwind SaaS MVP template
 - Design token system with theme.json
 - Feature flags configuration
@@ -17,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [0.1.0] - 2025-10-04
 
 ### Added
+
 - Initial project setup
 - Angular 20 workspace with standalone components
 - Tailwind CSS integration

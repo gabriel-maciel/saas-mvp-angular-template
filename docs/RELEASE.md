@@ -27,6 +27,7 @@ npm run release:tag major
 ```
 
 **What happens:**
+
 1. ✅ Verifies you're on `main` branch
 2. ✅ Ensures working tree is clean
 3. ✅ Pulls latest from origin
@@ -75,12 +76,15 @@ Update `CHANGELOG.md` before creating a release tag:
 ## [Unreleased]
 
 ### Added
+
 - New feature X
 
 ### Fixed
+
 - Bug Y
 
 ### Changed
+
 - Updated Z
 ```
 
@@ -95,7 +99,6 @@ Configure in GitHub: **Settings → Environments**
 1. **staging**
    - URL: `https://staging.example.com`
    - Auto-deploys on tag push
-   
 2. **production**
    - URL: `https://example.com`
    - Requires staging success
@@ -106,24 +109,28 @@ Configure in GitHub: **Settings → Environments**
 Update `.github/workflows/deploy.yml` with your deployment commands:
 
 **Vercel:**
+
 ```yaml
 - name: Deploy to production
   run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
 ```
 
 **Netlify:**
+
 ```yaml
 - name: Deploy to production
   run: netlify deploy --prod --auth=${{ secrets.NETLIFY_TOKEN }}
 ```
 
 **AWS S3:**
+
 ```yaml
 - name: Deploy to production
   run: aws s3 sync dist/ s3://your-bucket/
 ```
 
 **Firebase:**
+
 ```yaml
 - name: Deploy to production
   run: firebase deploy --only hosting:production
@@ -134,6 +141,7 @@ Update `.github/workflows/deploy.yml` with your deployment commands:
 Add secrets in GitHub: **Settings → Secrets and variables → Actions**
 
 Required secrets depend on your deployment target:
+
 - `VERCEL_TOKEN`
 - `NETLIFY_TOKEN`
 - `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY`
@@ -144,11 +152,13 @@ Required secrets depend on your deployment target:
 If a release has issues:
 
 1. **Identify last good version:**
+
    ```bash
    git tag -l "v*" | tail -10
    ```
 
 2. **Deploy previous version:**
+
    ```bash
    npm run release:deploy -- v0.1.0
    ```
@@ -172,12 +182,14 @@ If a release has issues:
 ## Troubleshooting
 
 ### "Must be on main branch" error
+
 ```bash
 git checkout main
 git pull origin main
 ```
 
 ### "Working tree is not clean" error
+
 ```bash
 git status
 git add .
@@ -185,6 +197,7 @@ git commit -m "chore: prepare for release"
 ```
 
 ### Tag already exists
+
 ```bash
 # Delete local tag
 git tag -d v0.1.0
@@ -194,6 +207,7 @@ git push origin :refs/tags/v0.1.0
 ```
 
 ### Deployment failed
+
 1. Check GitHub Actions logs
 2. Verify secrets are configured
 3. Test deployment command locally

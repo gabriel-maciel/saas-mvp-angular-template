@@ -98,7 +98,7 @@ jobs:
           body: |
             ## Changes
             See [CHANGELOG.md](https://github.com/${{ github.repository }}/blob/main/CHANGELOG.md)
-            
+
             ## Deployment
             - ✅ Staging: https://staging.example.com
             - ✅ Production: https://example.com

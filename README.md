@@ -169,22 +169,22 @@ Defined in `angular.json`:
 
 ## Scripts Reference
 
-| Script                 | Description                             |
-| ---------------------- | --------------------------------------- |
-| `npm run dev`          | Start development server                |
-| `npm run build`        | Production build                        |
-| `npm run test`         | Run unit tests                          |
-| `npm run lint`         | Lint all files                          |
-| `npm run format`       | Format all files with Prettier          |
-| `npm run format:check` | Check formatting without changes        |
-| `npm run typecheck`    | Run TypeScript compiler checks          |
-| `npm run theme:build`  | Generate CSS variables from theme.json  |
-| `npm run theme:watch`  | Watch theme.json and rebuild on changes |
-| `npm run demo`         | Alias for dev (preview/demo mode)       |
-| `npm run story`        | Alias for dev (Storybook-like preview)  |
-| `npm run release:tag`  | Create release tag and trigger deploy   |
-| `npm run release:deploy` | Deploy specific version (rollback)    |
-| `npm run ci`           | Run full CI pipeline locally            |
+| Script                   | Description                             |
+| ------------------------ | --------------------------------------- |
+| `npm run dev`            | Start development server                |
+| `npm run build`          | Production build                        |
+| `npm run test`           | Run unit tests                          |
+| `npm run lint`           | Lint all files                          |
+| `npm run format`         | Format all files with Prettier          |
+| `npm run format:check`   | Check formatting without changes        |
+| `npm run typecheck`      | Run TypeScript compiler checks          |
+| `npm run theme:build`    | Generate CSS variables from theme.json  |
+| `npm run theme:watch`    | Watch theme.json and rebuild on changes |
+| `npm run demo`           | Alias for dev (preview/demo mode)       |
+| `npm run story`          | Alias for dev (Storybook-like preview)  |
+| `npm run release:tag`    | Create release tag and trigger deploy   |
+| `npm run release:deploy` | Deploy specific version (rollback)      |
+| `npm run ci`             | Run full CI pipeline locally            |
 
 ## Release & Deployment
 
@@ -201,6 +201,7 @@ npm run release:deploy -- v0.1.0
 ```
 
 **What happens on release:**
+
 1. Version bumped in `package.json`
 2. Git tag created (`vX.Y.Z`)
 3. Tag pushed to GitHub
