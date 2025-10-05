@@ -2,6 +2,8 @@
 
 This document describes the release and deployment workflow following Trunk-Based Development principles.
 
+> **📘 First-time setup?** See [VERCEL_SETUP.md](./VERCEL_SETUP.md) for Vercel deployment configuration.
+
 ## Overview
 
 - **Single trunk**: `main` is always releasable

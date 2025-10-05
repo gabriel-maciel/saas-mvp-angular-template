@@ -39,13 +39,10 @@ jobs:
 
       - name: Deploy to staging
         run: |
-          echo "🚀 Deploying to staging..."
-          echo "TODO: Add your staging deployment command here"
-          echo "Examples:"
-          echo "  - Vercel: vercel --prod --token=\$VERCEL_TOKEN"
-          echo "  - Netlify: netlify deploy --prod --auth=\$NETLIFY_TOKEN"
-          echo "  - AWS S3: aws s3 sync dist/ s3://your-bucket/"
-          echo "  - Firebase: firebase deploy --only hosting:staging"
+          npx vercel --token=${{ secrets.VERCEL_TOKEN }} --yes --prod
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
       - name: Staging deployment summary
         run: |
@@ -80,13 +77,10 @@ jobs:
 
       - name: Deploy to production
         run: |
-          echo "🚀 Deploying to production..."
-          echo "TODO: Add your production deployment command here"
-          echo "Examples:"
-          echo "  - Vercel: vercel --prod --token=\$VERCEL_TOKEN"
-          echo "  - Netlify: netlify deploy --prod --auth=\$NETLIFY_TOKEN"
-          echo "  - AWS S3: aws s3 sync dist/ s3://your-bucket/"
-          echo "  - Firebase: firebase deploy --only hosting:production"
+          npx vercel --token=${{ secrets.VERCEL_TOKEN }} --yes --prod
+        env:
+          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
       - name: Create GitHub Release
         uses: actions/create-release@v1
