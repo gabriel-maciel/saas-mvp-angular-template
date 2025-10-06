@@ -6,6 +6,10 @@ export const appRoutes: Routes = [
     loadComponent: () => import('./pages/home/home.component').then(m => m.HomeComponent),
   },
   {
+    path: 'pricing',
+    loadComponent: () => import('./pages/pricing/pricing.component').then(m => m.PricingComponent),
+  },
+  {
     path: '**',
     redirectTo: '',
   },

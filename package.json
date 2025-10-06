@@ -17,6 +17,7 @@
     "demo": "npm run dev",
     "story": "npm run dev",
     "a11y:smoke": "echo 'TODO: Add accessibility smoke tests (e.g., axe-core, pa11y)'",
+    "i18n:extract": "ng extract-i18n --output-path apps/demo/src/locale",
     "release:tag": "bash scripts/release-tag.sh",
     "release:deploy": "bash scripts/release-deploy.sh",
     "ci": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run build"
@@ -27,6 +28,7 @@
     "@angular/compiler": "^20.0.0",
     "@angular/core": "^20.0.0",
     "@angular/forms": "^20.0.0",
+    "@angular/localize": "^20.3.3",
     "@angular/platform-browser": "^20.0.0",
     "@angular/platform-browser-dynamic": "^20.0.0",
     "@angular/router": "^20.0.0",

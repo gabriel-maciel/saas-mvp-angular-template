@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="home.title" datatype="html">
+        <source>Welcome to Your SaaS MVP</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/home/home.component.ts</context>
+          <context context-type="linenumber">10,11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.description" datatype="html">
+        <source> A production-ready Angular 20 + Tailwind template following Trunk-Based Development principles. </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/home/home.component.ts</context>
+          <context context-type="linenumber">12,15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.cta.getStarted" datatype="html">
+        <source>Get Started</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/home/home.component.ts</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="home.cta.learnMore" datatype="html">
+        <source>Learn More</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/home/home.component.ts</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.title" datatype="html">
+        <source>Simple, Transparent Pricing</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">11,14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.starter.name" datatype="html">
+        <source>Starter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">17,19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.starter.price" datatype="html">
+        <source>$29</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">19,20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.perMonth" datatype="html">
+        <source>/month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">20,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.starter.feature1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Up to 10 users </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.starter.feature2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Basic features </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.starter.feature3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Email support </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.cta.getStarted" datatype="html">
+        <source>Get Started</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">34,36</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.pro.badge" datatype="html">
+        <source> Popular </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">44,46</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.pro.name" datatype="html">
+        <source>Pro</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.pro.price" datatype="html">
+        <source>$99</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">48,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.pro.feature1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Up to 50 users </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">53,55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.pro.feature2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Advanced features </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">56,58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.pro.feature3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Priority support </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">59,61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.pro.feature4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Custom integrations </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.enterprise.name" datatype="html">
+        <source>Enterprise</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">72,74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.enterprise.price" datatype="html">
+        <source>Custom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">74,76</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.enterprise.feature1" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Unlimited users </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">78,80</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.enterprise.feature2" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> All features </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">81,83</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.enterprise.feature3" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> Dedicated support </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">84,86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.enterprise.feature4" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;mr-2&quot;&gt;"/>✓<x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> SLA guarantee </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">87,89</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pricing.cta.contactSales" datatype="html">
+        <source>Contact Sales</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">apps/demo/src/app/pages/pricing/pricing.component.ts</context>
+          <context context-type="linenumber">91,94</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.logo.ariaLabel" datatype="html">
+        <source>Go to home page</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/primitives/src/lib/header/header.component.ts</context>
+          <context context-type="linenumber">19,21</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.logo.text" datatype="html">
+        <source>SaaS MVP</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/primitives/src/lib/header/header.component.ts</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.ariaLabel" datatype="html">
+        <source>Main navigation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/primitives/src/lib/header/header.component.ts</context>
+          <context context-type="linenumber">32,35</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.home" datatype="html">
+        <source> Home </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/primitives/src/lib/header/header.component.ts</context>
+          <context context-type="linenumber">41,42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.nav.pricing" datatype="html">
+        <source> Pricing </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/primitives/src/lib/header/header.component.ts</context>
+          <context context-type="linenumber">49,51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.auth.userAvatar" datatype="html">
+        <source>User avatar</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/primitives/src/lib/header/header.component.ts</context>
+          <context context-type="linenumber">61,63</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="header.auth.login" datatype="html">
+        <source>Log In</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">libs/ui/primitives/src/lib/header/header.component.ts</context>
+          <context context-type="linenumber">67,69</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

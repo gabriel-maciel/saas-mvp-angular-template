@@ -2,9 +2,9 @@ import { Component } from '@angular/core';
 import { ButtonComponent } from '@saas-mvp/ui/primitives';
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-pricing',
   standalone: true,
   imports: [ButtonComponent],
-  templateUrl: './home.component.html',
+  templateUrl: './pricing.component.html',
 })
-export class HomeComponent {}
+export class PricingComponent {}
