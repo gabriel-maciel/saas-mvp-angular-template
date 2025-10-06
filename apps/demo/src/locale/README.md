@@ -59,6 +59,7 @@ We use the `@@` prefix for custom IDs:
 - **Shared**: `common.element`
 
 Examples:
+
 - `home.title`
 - `pricing.starter.name`
 - `header.nav.home`
