@@ -7,14 +7,14 @@ import { ButtonComponent } from '@saas-mvp/ui/primitives';
   imports: [ButtonComponent],
   template: `
     <div class="text-center">
-      <h2 class="text-4xl font-bold text-gray-900 mb-4">Welcome to Your SaaS MVP</h2>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-6">
+      <h2 class="text-4xl font-bold mb-4" i18n="@@home.title">Welcome to Your SaaS MVP</h2>
+      <p class="text-xl max-w-2xl mx-auto mb-6" i18n="@@home.description">
         A production-ready Angular 20 + Tailwind template following Trunk-Based Development
         principles.
       </p>
       <div class="flex gap-4 justify-center">
-        <ui-button variant="primary" size="lg">Get Started</ui-button>
-        <ui-button variant="outline" size="lg">Learn More</ui-button>
+        <ui-button variant="primary" size="lg" i18n="@@home.cta.getStarted">Get Started</ui-button>
+        <ui-button variant="outline" size="lg" i18n="@@home.cta.learnMore">Learn More</ui-button>
       </div>
     </div>
   `,

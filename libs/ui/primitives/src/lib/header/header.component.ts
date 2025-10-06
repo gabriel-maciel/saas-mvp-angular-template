@@ -7,51 +7,64 @@ import { ButtonComponent } from '../button/button.component';
   standalone: true,
   imports: [RouterLink, RouterLinkActive, ButtonComponent],
   template: `
-    <header class="bg-white border-b border-gray-200">
+    <header class="bg-white border-b border-gray-200 shadow-sm">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
           <!-- Logo -->
           <div class="flex items-center">
-            <a routerLink="/" class="flex items-center space-x-2">
-              <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+            <a
+              routerLink="/"
+              class="flex items-center gap-2"
+              i18n-aria-label="@@header.logo.ariaLabel"
+              aria-label="Go to home page"
+            >
+              <div class="w-8 h-8 bg-primary rounded-brand flex items-center justify-center">
                 <span class="text-white font-bold text-lg">S</span>
               </div>
-              <span class="text-xl font-bold text-gray-900">SaaS MVP</span>
+              <span class="text-xl font-bold" i18n="@@header.logo.text">SaaS MVP</span>
             </a>
           </div>
 
           <!-- Navigation -->
-          <nav class="hidden md:flex items-center space-x-8">
+          <nav
+            class="hidden md:flex items-center gap-8"
+            i18n-aria-label="@@header.nav.ariaLabel"
+            aria-label="Main navigation"
+          >
             <a
               routerLink="/"
               routerLinkActive="text-primary font-semibold"
               [routerLinkActiveOptions]="{ exact: true }"
-              class="text-gray-600 hover:text-gray-900 transition-colors"
+              class="transition-colors hover:text-primary"
+              i18n="@@header.nav.home"
             >
               Home
             </a>
             <a
               routerLink="/pricing"
               routerLinkActive="text-primary font-semibold"
-              class="text-gray-600 hover:text-gray-900 transition-colors"
+              class="transition-colors hover:text-primary"
+              i18n="@@header.nav.pricing"
             >
               Pricing
             </a>
           </nav>
 
           <!-- Auth Section -->
-          <div class="flex items-center space-x-4">
+          <div class="flex items-center gap-4">
             @if (isAuthenticated) {
-              <div class="flex items-center space-x-3">
-                <span class="text-sm text-gray-700">{{ userName }}</span>
+              <div class="flex items-center gap-3">
+                <span class="text-sm">{{ userName }}</span>
                 <div
                   class="w-8 h-8 bg-primary rounded-full flex items-center justify-center text-white text-sm font-medium"
+                  i18n-aria-label="@@header.auth.userAvatar"
+                  aria-label="User avatar"
                 >
                   {{ userInitials }}
                 </div>
               </div>
             } @else {
-              <ui-button variant="outline" size="sm">Log In</ui-button>
+              <ui-button variant="outline" size="sm" i18n="@@header.auth.login">Log In</ui-button>
             }
           </div>
         </div>
