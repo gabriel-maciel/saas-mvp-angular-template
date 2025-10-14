@@ -1,4 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { provideHttpClientTesting } from '@angular/common/http/testing';
 import { PricingComponent } from './pricing.component';
 
 describe('PricingComponent', () => {
@@ -8,6 +10,10 @@ describe('PricingComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [PricingComponent],
+      providers: [
+        provideHttpClient(withInterceptorsFromDi()),
+        provideHttpClientTesting(),
+      ],
     }).compileComponents();
 
     fixture = TestBed.createComponent(PricingComponent);
