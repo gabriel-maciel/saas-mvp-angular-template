@@ -55,7 +55,8 @@ npm run format
 │       └── pricing/          # Example feature
 ├── config/
 │   ├── theme.json            # Design tokens (colors, spacing, etc.)
-│   └── feature-flags.json    # Feature flag configuration
+│   ├── feature-flags.json    # Feature flag configuration
+│   └── pricing.json          # Pricing plans configuration
 ├── scripts/
 │   └── build-theme.js        # Generate CSS variables from tokens
 └── angular.json              # Angular CLI configuration
@@ -224,6 +225,7 @@ See [docs/RELEASE.md](./docs/RELEASE.md) for detailed release workflow.
 - [Quick Start Guide](./docs/QUICK_START.md)
 - [Architecture Overview](./docs/ARCHITECTURE.md)
 - [Release & Deployment](./docs/RELEASE.md)
+- [Pricing Configuration](./docs/pricing-config.md)
 
 ## Contributing
 

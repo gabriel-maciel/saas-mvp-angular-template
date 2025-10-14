@@ -5,6 +5,9 @@
   "framework": null,
   "installCommand": "npm ci",
   "devCommand": "npm run dev",
+  "git": {
+    "deploymentEnabled": false
+  },
   "rewrites": [
     {
       "source": "/(.*)",

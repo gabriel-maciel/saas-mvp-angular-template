@@ -27,7 +27,9 @@
       "@saas-mvp/core/http": ["libs/core/http/src/index.ts"],
       "@saas-mvp/ui/tokens": ["libs/ui/tokens/src/index.ts"],
       "@saas-mvp/ui/primitives": ["libs/ui/primitives/src/index.ts"],
-      "@saas-mvp/features/pricing": ["libs/features/pricing/src/index.ts"]
+      "@saas-mvp/features/pricing": ["libs/features/pricing/src/index.ts"],
+      "@saas-mvp/features/billing": ["libs/features/billing/src/index.ts"],
+      "@saas-mvp/config/*": ["config/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

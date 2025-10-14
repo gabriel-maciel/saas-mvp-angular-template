@@ -1,0 +1,31 @@
+{
+  "plans": {
+    "starter": {
+      "id": "starter",
+      "name": "Starter",
+      "priceId": "price_starter",
+      "price": "$29",
+      "description": "Perfect for individuals and small teams getting started",
+      "popular": false,
+      "contactSales": false
+    },
+    "pro": {
+      "id": "pro",
+      "name": "Pro",
+      "priceId": "price_1SHcOLCpV0xW4LsOcG6LWm2N",
+      "price": "$99",
+      "description": "For growing teams that need more power",
+      "popular": true,
+      "contactSales": false
+    },
+    "enterprise": {
+      "id": "enterprise",
+      "name": "Enterprise",
+      "priceId": "price_enterprise",
+      "price": "Custom",
+      "description": "Custom solutions for large organizations",
+      "popular": false,
+      "contactSales": true
+    }
+  }
+}
