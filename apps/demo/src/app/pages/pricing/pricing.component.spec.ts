@@ -10,10 +10,7 @@ describe('PricingComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [PricingComponent],
-      providers: [
-        provideHttpClient(withInterceptorsFromDi()),
-        provideHttpClientTesting(),
-      ],
+      providers: [provideHttpClient(withInterceptorsFromDi()), provideHttpClientTesting()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(PricingComponent);
