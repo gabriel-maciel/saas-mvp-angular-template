@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Pricing Configuration Schema",
+  "description": "Schema for pricing plans configuration",
+  "type": "object",
+  "properties": {
+    "plans": {
+      "type": "object",
+      "description": "Available pricing plans keyed by plan ID",
+      "patternProperties": {
+        "^[a-z_]+$": {
+          "type": "object",
+          "required": ["id", "name", "priceId", "price"],
+          "properties": {
+            "id": {
+              "type": "string",
+              "description": "Unique identifier for the plan"
+            },
+            "name": {
+              "type": "string",
+              "description": "Display name of the plan"
+            },
+            "priceId": {
+              "type": "string",
+              "description": "Stripe price ID (e.g., price_1ABC...)"
+            },
+            "price": {
+              "type": "string",
+              "description": "Display price (e.g., '$29', 'Custom')"
+            },
+            "description": {
+              "type": "string",
+              "description": "Optional plan description"
+            },
+            "features": {
+              "type": "array",
+              "description": "Optional list of plan features",
+              "items": {
+                "type": "string"
+              }
+            },
+            "popular": {
+              "type": "boolean",
+              "description": "Whether this plan should be highlighted as popular",
+              "default": false
+            },
+            "contactSales": {
+              "type": "boolean",
+              "description": "Whether this plan requires contacting sales instead of checkout",
+              "default": false
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["plans"],
+  "additionalProperties": false
+}
